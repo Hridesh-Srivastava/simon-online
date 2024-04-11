@@ -95,3 +95,15 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+footer a{
+  width:100px;
+  height:100px;
+  color:rgb(238, 223, 215);
+   text-decoration: none;
+}
+
+h4{
+  text-align: left;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
