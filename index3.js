@@ -12,14 +12,23 @@ var started = false;
 var level = 0;
 
 //1. Use jQuery to detect when a keyboard key has been pressed, when that happens for the first time, call nextSequence().
-$(document).keydown((eve)=>{
+
+setTimeout((ew)=>{
+$(document).ready(function() {
+  $("#level-title").text("level"+" "+level);
+  // Call nextSequence() when the document is ready
+  nextSequence();
+  started=true;
+});
+},1000);
+/*$(document).on("keydown",(eve)=>{
   if(!started){
 //3. The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
 $("#level-title").text("level"+level);
 nextSequence();
 started=true;
   }
-});
+});*/
 
 //1. Use jQuery to detect when any of the buttons are clicked and trigger a handler function.
 $(".btn").click(function() {
@@ -72,7 +81,7 @@ setTimeout(function () {
 
 //3. Change the h1 title to say "Game Over, Press Any Key to Restart" if the user got the answer wrong.
 $("#level-title").text("Game Over, Press Any Key to Restart");
- 
+ //document.getElementById("level-title").innerHTML="Game Over, Press Any Key to Restart";
  //2. Call startOver() if the user gets the sequence wrong.
  startOver();
 }
