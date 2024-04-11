@@ -1,34 +1,77 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color:rgb(91, 143, 117);
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family:'Press Start 2P', cursive;
+  font-weight:bolder;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: rgb(138, 21, 227);
+  text-shadow: 6px 6px 10px rgba(15, 212, 226, 0.96);
 }
+
 
 .container {
   display: block;
-  width: 50%;
+  
   margin: auto;
-
+  background-image: url("./Black\ Minimalist\ Believe\ Phone\ Wallpaper.jpg");
+   height:450px;
+   width: 30%;
+   border:10px solid black;
+   border-radius:30%;
+   box-shadow:0px 0px 5px 5px cyan;
+   animation:anime 8s linear 2s alternate infinite;
 }
-
+@keyframes anime{
+  10%{
+    box-shadow:0px 0px 5px 5px rgb(255, 255, 0);
+  }
+  20%{
+    box-shadow:0px 0px 5px 5px green;
+  }
+  30%{
+    box-shadow:0px 0px 5px 5px pink;
+  }
+  40%{
+     box-shadow: 0px 0px 5px 5px palegreen;
+  }
+  50%{
+    box-shadow: 0px 0px 5px 5px blue;
+  }
+  60%{
+    box-shadow: 0px 0px 5px 5px blueviolet;
+  }
+  70%{
+    box-shadow: 0px 0px 5px 5px orangered;
+  }
+  80%{
+    box-shadow: 0px 0px 5px 5px orchid;
+  }
+  90%{
+    box-shadow: 0px 0px 5px 5px greenyellow;
+  }
+  100%{
+    box-shadow: 0px 0px 5px 5px mediumslateblue;
+  }
+}
 .btn {
-  margin: 25px;
+  margin: 20px;
   display: inline-block;
   height: 200px;
   width: 200px;
   border: 10px solid black;
-  border-radius: 20%;
+  border-radius: 50%;
+  margin:0px;
+  border-spacing: 0px;
+  
 }
 
 .game-over {
   background-color: red;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .red {
@@ -36,7 +79,7 @@ body {
 }
 
 .green {
-  background-color: green;
+  background-color: rgb(62, 194, 62);
 }
 
 .blue {
@@ -44,7 +87,7 @@ body {
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: rgb(210, 242, 0);
 }
 
 .pressed {

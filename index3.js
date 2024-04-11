@@ -20,7 +20,7 @@ $(document).ready(function() {
   nextSequence();
   started=true;
 });
-},1000);
+},1500);
 /*$(document).on("keydown",(eve)=>{
   if(!started){
 //3. The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
@@ -80,7 +80,7 @@ setTimeout(function () {
 }, 200);
 
 //3. Change the h1 title to say "Game Over, Press Any Key to Restart" if the user got the answer wrong.
-$("#level-title").text("Game Over, Press Any Key to Restart");
+$("#level-title").text("Game Over, Reload site to Restart");
  //document.getElementById("level-title").innerHTML="Game Over, Press Any Key to Restart";
  //2. Call startOver() if the user gets the sequence wrong.
  startOver();
