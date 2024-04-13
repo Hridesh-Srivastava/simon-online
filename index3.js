@@ -15,10 +15,12 @@ var level = 0;
 
 setTimeout((ew)=>{
 $(document).ready(function() {
+  if(!started){
   $("#level-title").text("level"+" "+level);
   // Call nextSequence() when the document is ready
   nextSequence();
   started=true;
+}
 });
 },1500);
 /*$(document).on("keydown",(eve)=>{
@@ -133,3 +135,4 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+                                                                                                             
