@@ -68,7 +68,7 @@ function checkAnswer(currentLevel) {
 
     }
 
-  } else {
+  } else { //sari wrong conditions statements if user has done any mistake in playing(game-over) else me aayengi;
 
     console.log("wrong");
 
